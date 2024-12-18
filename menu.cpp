@@ -59,6 +59,20 @@ void sortingAsc()
   getch();
 }
 
+
+
+void sortingDsc() {  
+    for (int i = 0; i < n - 1; i++) {  
+        for (int j = 0; j < n - i - 1; j++) {  
+            if (myData[j] < myData[j + 1]) {  
+                tukar(&myData[j], &myData[j + 1]);  
+            }  
+        }  
+    }  
+    cout << "Data telah diurutkan dalam urutan menurun.\n";  
+    getch();  
+}  
+
 int main()
 {
   char pl;
